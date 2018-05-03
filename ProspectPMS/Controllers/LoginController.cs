@@ -9,7 +9,7 @@ namespace ProspectPMS.Controllers
     public class LoginController : Controller
     {
         // GET: Login
-        public ActionResult Index()
+        public ActionResult LoginIndex()
         {
             return View();
         }
