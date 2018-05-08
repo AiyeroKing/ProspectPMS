@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProspectPMS_Model
+namespace ProspectPMS_Bll.LoginUnit
 {
-    public class Class1
+    public class Login_Bll
     {
+
     }
 }

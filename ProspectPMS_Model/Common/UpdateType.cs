@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace ProspectPMS_Bll
+namespace ProspectPMS_Model.Common
 {
-    public class Class1
+    public enum UpdateType
     {
+        Delete = 0,
+        Insert = 1
     }
 }
