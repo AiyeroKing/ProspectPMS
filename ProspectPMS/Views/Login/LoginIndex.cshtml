@@ -1,21 +1,112 @@
-﻿<!DOCTYPE HTML>
-<html>
+﻿<!Doctype html>
+<html lang="en">
+
 <head>
-    <title>login</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="keywords" content="">
-    <meta http-equiv="description" content="">
-    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>X-manager Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="~/Content/LOGIN/Login.css" />
+    <link href="~/Content/LOGIN/bootstrap.min.css" rel="stylesheet" />
     <script src="~/Scripts/Login/LoginJS.js" defer></script>
+    @*<script src="~/Content/LOGIN/jquery.min.js"></script>*@
+    <script src="~/Content/LOGIN/jquery.js" defer></script>
+    <script src="~/Content/LOGIN/bootstrap.min.js" defer></script>
 </head>
+
 <body>
-    <div id="form-div">
-        <form id="Login_Form" onsubmit="return false" action="/Login/LoginAction" method="post">
-            <p>用户名：<input name="Account" type="text" id="txtUserName" tabindex="1" size="15" value="" /></p>
-            <p>密　码：<input name="password" type="password" id="TextBox2" tabindex="2" size="16" value="" /></p>
-            <p><input type="button" value="登录" onclick="login()">&nbsp;<input type="reset" value="重置"></p>
-            <p><a href="#">忘记密码</a>&nbsp;<a href="/Login/SignUpIndex">注册</a></p>
-        </form>
+    <div class="onClass_div">
+        <div class="onClass_div_forword">
+            <div class="img_forword"></div>
+        </div>
+        <div class="onClass_div_lastword">
+            <div class="login_form_css">
+                <div class="row">
+                    <div class="form_css">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="用户名或电子邮件">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="form-group help">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="密　码">
+                                <i class="fa fa-lock"></i>
+                                <a href="#" class="fa fa-question-circle"></a>
+                            </div>
+                            <div class="form-group" style="margin-top: -3%">
+                                <div class="main-checkbox">
+                                    <input type="checkbox" value="None" id="checkbox1" name="check" />
+                                    <label for="checkbox1"></label>
+                                    <span class="text">记住密码</span>
+                                </div>
+                                <div style="margin-top: 2%">
+                                    <button type="button" class="btn btn-info" onclick="login()"  style="width:100%;margin-bottom:2%;">登录</button>
+                                    <button type="reset" class="btn btn-success" style="width:100%;">重置</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="signup_text_css">
+                <a href="#">账号注册</a>
+            </div>
+        </div>
     </div>
+    <div class="footer_css">
+
+    </div>
+
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<!DOCTYPE HTML>
+    <html>
+    <head>
+        <title>login</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="keywords" content="">
+        <meta http-equiv="description" content="">
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="~/Scripts/Login/LoginJS.js" defer></script>
+    </head>
+    <body>
+        <div id="form-div">
+            <form id="Login_Form" onsubmit="return false" action="/Login/LoginAction" method="post">
+                <p>用户名：<input name="Account" type="text" id="txtUserName" tabindex="1" size="15" value="" /></p>
+                <p>密　码：<input name="password" type="password" id="TextBox2" tabindex="2" size="16" value="" /></p>
+                <p><input type="button" value="登录" onclick="login()">&nbsp;<input type="reset" value="重置"></p>
+                <p><a href="#">忘记密码</a>&nbsp;<a href="/Login/SignUpIndex">注册</a></p>
+            </form>
+        </div>
+    </body>
+    </html>*@

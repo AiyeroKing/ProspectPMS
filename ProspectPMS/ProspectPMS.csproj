@@ -159,9 +159,18 @@
     <Content Include="App_Data\ProspectPMS_DataBase.sql" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\LOGIN\bootstrap.min.css" />
+    <Content Include="Content\LOGIN\bootstrap.min.js" />
+    <Content Include="Content\LOGIN\jquery.js" />
+    <Content Include="Content\LOGIN\jquery.min.js" />
+    <Content Include="Content\LOGIN\Login.css" />
+    <Content Include="Content\LOGIN\Login.html" />
+    <Content Include="Content\LOGIN\上背景.jpg" />
+    <Content Include="Content\LOGIN\下背景.jpg" />
+    <Content Include="Content\LOGIN\头像.jpg" />
+    <Content Include="Content\LOGIN\背景.png" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -190,15 +199,10 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Login\LoginIndex.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Login\SignUpIndex.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -215,6 +219,14 @@
     <ProjectReference Include="..\ProspectPMS_Bll\ProspectPMS_Bll.csproj">
       <Project>{6bd3e7ee-142a-4f59-983d-28890d086677}</Project>
       <Name>ProspectPMS_Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProspectPMS_Dal\ProspectPMS_Dal.csproj">
+      <Project>{b5d26184-7ff2-402f-9d31-17b7591ea6ae}</Project>
+      <Name>ProspectPMS_Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProspectPMS_Model\ProspectPMS_Model.csproj">
+      <Project>{b7356327-bf12-4986-8492-212b4c268a36}</Project>
+      <Name>ProspectPMS_Model</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

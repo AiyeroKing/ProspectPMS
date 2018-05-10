@@ -1,12 +1,7 @@
 ﻿using Dapper;
 using Dapper.Common;
-using ProspectPMS_Model.PMS_ViewModel;
-using System;
-using System.Collections.Generic;
+using ProspectPMS_Model.PMS_Model;
 using System.Data.Common;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProspectPMS_Dal.LoginUnit
 {
@@ -27,10 +22,10 @@ namespace ProspectPMS_Dal.LoginUnit
             {
                 using (DbConnection conn = DbFactory.CreateConnection())
                 {
-                    Login_viewmodel viewmodel = new Login_viewmodel();
-                    viewmodel.Login_UserName = AccountName;
-                    viewmodel.Login_UserPassword = AccountPassword;
-                    result = conn.Execute(AddAccount_Sqlstr, viewmodel);
+                    LoginUnit_Model model = new LoginUnit_Model();
+                    model.Login_UserName = AccountName;
+                    model.Login_UserPassword = AccountPassword;
+                    result = conn.Execute(AddAccount_Sqlstr, model);
                     return result;
                 }
             }
