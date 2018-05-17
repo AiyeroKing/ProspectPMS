@@ -19,7 +19,7 @@ namespace ProspectPMS_Model.PMS_Model
         /// <summary>
         /// 标识ID 将=登录表ID
         /// </summary>
-        public int Login_UserID { get; set; }
+        public string Login_UserID { get; set; }
 
         /// <summary>
         /// 用户账号
@@ -84,7 +84,7 @@ namespace ProspectPMS_Model.PMS_Model
         /// <summary>
         /// 用户生日
         /// </summary>
-        public DateTime Login_UserBirthday { get; set; }
+        public string Login_UserBirthday { get; set; }
 
         /// <summary>
         /// 注册创建时间

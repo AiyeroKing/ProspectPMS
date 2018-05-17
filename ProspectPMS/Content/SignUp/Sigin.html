@@ -1,70 +1,58 @@
-﻿<!Doctype html>
+<!Doctype html>
 <html lang="en">
 
 <head>
     <title>X-Manager 注册</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="~/Content/SignUp/Sigin.css" rel="stylesheet" />
-    <script src="~/Content/LOGIN/jquery.js" defer></script>
-    <script src="~/Content/LOGIN/jquery.min.js" defer></script>
-    <link href="~/Content/SignUp/bootstrap.min.css" rel="stylesheet" />
-    <script src="~/Scripts/Login/SignupJS.js" defer></script>
+    <link type="text/css" rel="stylesheet" href="Sigin.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
 </head>
 
 <body>
     <div class="Sign_background_div">
-
         <div class="div_top_css">
-            <img src="~/Content/SignUp/Logo.png" />
+            <img src="Logo.png" />
             <a><span style="color: aquamarine"> X</span>-<span style="color: cornflowerblue">Manager</span> <span style="color:tomato">项目管理系统</span></a>
         </div>
-
         <div class="div_center_css">
             <div class="div_center_css_1">
             </div>
         </div>
-
         <div class="form_tital">
-
             <h1 align="center">注 &nbsp; &nbsp;册</h1>
-
             <hr />
-
-            <form class="form-horizontal" id="Sigin_Form" onsubmit="return false" action="/Login/SignUpAction" method="post">
-
+            <form class="form-horizontal">
                 <fieldset>
-
                     <div class="Necessary_css">
                         <div class="page-header">
-                            <span class="label label-success">Necessary</span>
+                            <span class="label label-success" style="wi">Necessary</span>
                             <h3>账号信息<small> Account Message</small></h3>
                             <div class="alert alert-danger" role="alert">请输入要进行注册的基础信息，请务必填写必填内容，且注意填写安全。本网站保证，不会泄露您的个人信息。</div>
                         </div>
-
                         <div class="control-group" style="width: 50%;margin-left:25%;">
                             <!-- Text input-->
                             <div class="controls">
                                 <label class="control-label" for="input01"><h4>请输入注册账号：</h4></label>
-                                <input type="text" placeholder="请输入用户名..." class="input-xlarge" name="Login_UserName" style="margin-left: 10px;height: 30px;width: 200px; ">
+                                <input type="text" placeholder="请输入用户名..." class="input-xlarge" style="margin-left: 10px;height: 30px;width: 200px; ">
                                 <span class="label label-danger">必填</span>
                                 &nbsp;<p class="help-block">请输入要注册的用户名！</p>
                             </div>
                             <div class="controls">
                                 <label class="control-label" for="input01"><h4>请输入账号昵称：</h4></label>
-                                <input type="text" placeholder="请输入用户名..." class="input-xlarge" name="Login_UserNickname" style="margin-left: 10px;height: 30px;width: 180px; ">
+                                <input type="text" placeholder="请输入用户名..." class="input-xlarge" style="margin-left: 10px;height: 30px;width: 180px; ">
                                 <span class="label label-danger">必填</span>
                                 &nbsp;<p class="help-block">请输入要注册的用户名！</p>
                             </div>
                             <div class="controls" style="margin-top: 3%;">
                                 <label class="control-label" for="input01"><h4>请输入注册密码：</h4></label>
-                                <input type="Password" placeholder="请输入用户密码..." class="input-xlarge" name="Login_UserPassword" style="margin-left: 10px;height: 30px;width: 220px; ">
+                                <input type="Password" placeholder="请输入用户密码..." class="input-xlarge" style="margin-left: 10px;height: 30px;width: 220px; ">
                                 <span class="label label-danger">必填</span>
                                 &nbsp;<p class="help-block">请输入要注册的用户密码！</p>
                             </div>
-                            
                             <div class="controls" style="margin-top: 3%;">
                                 <label class="control-label" for="input01"><h4>请重新输入密码：</h4></label>
-                                <input type="Password" placeholder="请输入用户密码..." class="input-xlarge" name="reLogin_UserPassword" style="margin-left: 10px;height: 30px;width: 220px; ">
+                                <input type="Password" placeholder="请输入用户密码..." class="input-xlarge" style="margin-left: 10px;height: 30px;width: 220px; ">
                                 <span class="label label-danger">必填</span>
                                 &nbsp;<p class="help-block">请输入要注册的用户密码！</p>
                             </div>
@@ -72,52 +60,56 @@
                             <div class="controls" style="margin-top: 3%;">
                                 <label class="control-label"><h4>请输入个性签名：</h4></label>
                                 <div>
-                                    <textarea rows="3" placeholder="请输入个性签名..." name="Login_UserVia" style="width:550px;height:100px;"></textarea>
+                                    <textarea rows="3" placeholder="请输入个性签名..." style=" width 550px;height 100px;"></textarea>
                                     <span class="label label-danger">必填</span>
                                 </div>
+
+
                                 &nbsp;<p class="help-block">请输入要注册的用户名的个性签名！</p>
                             </div>
                         </div>
+
+
+
 
                         <div class="page-header">
                             <span class="label label-info" style="wi">Personal Information</span>
                             <h3>个人信息<small> Personal Message</small></h3>
                             <div class="alert alert-info" role="alert">实名注册：请输入要进行注册的基础信息，请务必填写必填内容，且注意填写安全。本网站保证，不会泄露您的个人信息。</div>
                         </div>
-
                         <div class="control-group" style="width: 60%;margin-left:25%;">
                             <!-- Text input-->
                             <div class="controls">
                                 <label class="control-label" for="input01"><h4>请输入您的真实姓名：</h4></label>
-                                <input type="text" placeholder="请输入您的姓名..." class="input-xlarge" name="Login_UserTruename" style="margin-left: 10px;height: 30px;width: 200px; ">
+                                <input type="text" placeholder="请输入您的姓名..." class="input-xlarge" style="margin-left: 10px;height: 30px;width: 200px; ">
                                 <span class="label label-default">非必填</span>
                                 &nbsp;<p class="help-block">请输入要注册的用户名的真实姓名！</p>
                             </div>
 
                             <div class="controls">
                                 <label class="control-label" for="input01"><h4>请输入您的身份证号码：</h4></label>
-                                <input type="text" placeholder="请输入您的身份证号码..." class="input-xlarge" name="Login_UserIdcard" style="margin-left: 10px;height: 30px;width: 380px;">
+                                <input type="text" placeholder="请输入您的身份证号码..." class="input-xlarge" style="margin-left: 10px;height: 30px;width: 380px;">
                                 <span class="label label-default">非必填</span>
                                 &nbsp;<p class="help-block">请输入您的身份证号码！</p>
                             </div>
 
                             <div class="controls">
                                 <label class="control-label" for="input01"><h4>请输入您的电子邮箱：</h4></label>
-                                <input type="text" placeholder="请输入您的E-mail..." class="input-xlarge" name="Login_UserEmail" style="margin-left: 10px;height: 30px;width: 200px; ">
+                                <input type="text" placeholder="请输入您的E-mail..." class="input-xlarge" style="margin-left: 10px;height: 30px;width: 200px; ">
                                 <span class="label label-default">非必填</span>
                                 &nbsp;<p class="help-block">请输入您的电子邮箱！</p>
                             </div>
 
                             <div class="controls">
                                 <label class="control-label" for="input01"><h4>请输入您的手机号码：</h4></label>
-                                <input type="text" placeholder="请输入您的手机号码..." class="input-xlarge" name="Login_UserPhone" style="margin-left: 10px;height: 30px;width: 200px; ">
+                                <input type="text" placeholder="请输入您的手机号码..." class="input-xlarge" style="margin-left: 10px;height: 30px;width: 200px; ">
                                 <span class="label label-default">非必填</span>
                                 &nbsp;<p class="help-block">请输入您的手机号码！</p>
                             </div>
 
                             <div class="controls">
                                 <label class="control-label" for="input01"><h4>请选择您的性别：</h4></label>
-                                <select class="input-xlarge" name="Login_UserSex" style="margin-left: 20px;height: 30px;width: 227px; ">
+                                <select class="input-xlarge" style="margin-left: 20px;height: 30px;width: 227px; ">
                                     <option>请选择您的性别....</option>
                                     <option>男性</option>
                                     <option>女性</option>
@@ -128,17 +120,19 @@
 
                         </div>
 
+
+
+
                         <div class="page-header">
                             <span class="label label-danger" style="wi">Confidentiality</span>
                             <h3>个人信息<small> Personal Message</small></h3>
                             <div class="alert alert-warning" role="alert">问题与回答，此处填写内容可对账号安全造成决定性影响，请慎重填写。</div>
                         </div>
-
                         <div class="control-group" style="width: 60%;margin-left:25%;">
                             <!-- Text input-->
                             <div class="controls">
                                 <label class="control-label" for="input01"><h4>请选择您的提问：</h4></label>
-                                <select class="input-xlarge" name="Login_Userquestion" style="margin-left: 20px;height: 30px;width: 227px; ">
+                                <select class="input-xlarge" style="margin-left: 20px;height: 30px;width: 227px; ">
                                     <option>请选择您的提问....</option>
                                     <option>您父亲的姓名是？</option>
                                     <option>您母亲的姓名是？</option>
@@ -155,38 +149,36 @@
 
 
                             <div class="controls">
-                                <label class="control-label" for="input01"><h4>请输入您回答：</h4></label>
-                                <input type="text" placeholder="请输入您的回答..." name="Login_UserAnswer" class="input-xlarge" style="margin-left: 20px;height: 30px;width: 300px; ">
+                                <label class="control-label" for="input01"><h4>&nbsp;&nbsp;&nbsp;请输入您回答：</h4></label>
+                                <input type="text" placeholder="请输入您的回答..." class="input-xlarge" style="margin-left: 20px;height: 30px;width: 300px; ">
                                 <span class="label label-default">非必填</span>
                                 &nbsp;<p class="help-block">请输入您的回答！</p>
                             </div>
 
                             <div class="controls">
                                 <label class="control-label" for="input01"><h4>请输入您的邀请码：</h4></label>
-                                <input type="text" placeholder="请输入您的邀请码..." class="input-xlarge" name="Login_UserSignatures" style="margin-left: 20px;height: 30px;width: 150px; ">
+                                <input type="text" placeholder="请输入您的邀请码..." class="input-xlarge" style="margin-left: 20px;height: 30px;width: 150px; ">
                                 <span class="label label-default">非必填</span>
                                 &nbsp;<p class="help-block">请输入您的邀请码！</p>
                             </div>
                         </div>
 
-                        <div style="width: 50%;margin-left: 25%;margin-top:5%;">
-                            <input class="btn btn-large btn-block btn-primary" type="button" onclick="SinUp()" value="注册">
+                        <div style="width: 50%;margin-left: 25%;">
+                            <button class="btn btn-large btn-block btn-primary" type="button">注册</button>
                             <input class="btn btn-large btn-block" type="reset" value="重置">
                         </div>
 
                     </div>
 
-                </fieldset>
 
+                </fieldset>
             </form>
 
         </div>
-
         <div class="div_buttom_css">
-
         </div>
 
     </div>
-</body>
 
+</body>
 </html>

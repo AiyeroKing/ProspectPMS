@@ -7,24 +7,52 @@ namespace ProspectPMS_Dal.LoginUnit
 {
     public class SignUp_Dal
     {
-        public int SignUp_AddAccount_Dal(string AccountName, string AccountPassword)
+        public int SignUp_AddAccount_Dal(LoginUnit_Model model)
         {
             int result = 0;
             const string AddAccount_Sqlstr = @"
                                INSERT INTO dbo.List_Login_UserMessage
-                                        ( Login_UserName,Login_UserPassword) 
+                                        ( 
+                                          Login_UserID,
+                                          Login_UserName,
+                                          Login_UserPassword,
+                                          Login_UserNickname,
+                                          Login_UserVia,
+                                          Login_UserTruename,
+                                          Login_UserIdcard,
+                                          Login_UserEmail,
+                                          Login_UserPhone,
+                                          Login_Userquestion,
+                                          Login_UserAnswer,
+                                          Login_UserSignatures,
+                                          Login_UserSex,
+                                          Login_UserBirthday,
+                                          Login_CreatTime,
+                                          Login_LastUserTime
+                                        ) 
                                 VALUES  (
-                                        @Login_UserName,
-                                        @Login_UserPassword
+                                          @Login_UserID,
+                                          @Login_UserName,
+                                          @Login_UserPassword,
+                                          @Login_UserNickname,
+                                          @Login_UserVia,
+                                          @Login_UserTruename,
+                                          @Login_UserIdcard,
+                                          @Login_UserEmail,
+                                          @Login_UserPhone,
+                                          @Login_Userquestion,
+                                          @Login_UserAnswer,
+                                          @Login_UserSignatures,
+                                          @Login_UserSex,
+                                          @Login_UserBirthday,
+                                          @Login_CreatTime,
+                                          @Login_LastUserTime
                                          )";
 
             try
             {
                 using (DbConnection conn = DbFactory.CreateConnection())
                 {
-                    LoginUnit_Model model = new LoginUnit_Model();
-                    model.Login_UserName = AccountName;
-                    model.Login_UserPassword = AccountPassword;
                     result = conn.Execute(AddAccount_Sqlstr, model);
                     return result;
                 }
@@ -35,6 +63,9 @@ namespace ProspectPMS_Dal.LoginUnit
                 throw;
             }
         }
+
+
+        
 
     }
 }

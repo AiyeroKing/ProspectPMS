@@ -169,6 +169,11 @@
     <Content Include="Content\LOGIN\下背景.jpg" />
     <Content Include="Content\LOGIN\头像.jpg" />
     <Content Include="Content\LOGIN\背景.png" />
+    <Content Include="Content\SignUp\bootstrap.min.css" />
+    <Content Include="Content\SignUp\Logo.png" />
+    <Content Include="Content\SignUp\Sigin.css" />
+    <Content Include="Content\SignUp\Sigin.html" />
+    <Content Include="Content\SignUp\zc-img3.png" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

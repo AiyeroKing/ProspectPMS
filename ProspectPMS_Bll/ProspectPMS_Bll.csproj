@@ -50,6 +50,10 @@
       <Project>{b5d26184-7ff2-402f-9d31-17b7591ea6ae}</Project>
       <Name>ProspectPMS_Dal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ProspectPMS_Model\ProspectPMS_Model.csproj">
+      <Project>{B7356327-BF12-4986-8492-212B4C268A36}</Project>
+      <Name>ProspectPMS_Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
